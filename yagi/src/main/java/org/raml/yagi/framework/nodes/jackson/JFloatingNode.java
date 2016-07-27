@@ -40,7 +40,7 @@ public class JFloatingNode extends JBaseRamlNode implements FloatingNode
     @Override
     public BigDecimal getValue()
     {
-        final String value = getJsonNode().textValue();
+        final String value = (getJsonNode()).toString();
         return new BigDecimal(value);
     }
 
